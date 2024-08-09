@@ -10,7 +10,7 @@ def text_recognition(file_path: str):
     reader = easyocr.Reader(['ru', 'en'])
     result = reader.readtext(file_path)
 
-    return result
+    return result, {'1234': 1234}
 
 
 if __name__ == '__main__':
