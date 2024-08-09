@@ -1,16 +1,16 @@
 from fastapi import FastAPI
 
-import easyocr
+# import easyocr
 
 app = FastAPI()
 
 
 @app.post('/')
 def text_recognition(file_path: str):
-    reader = easyocr.Reader(['ru', 'en'])
-    result = reader.readtext(file_path)
+    # reader = easyocr.Reader(['ru', 'en'])
+    # result = reader.readtext(file_path)
 
-    return result, {'1234': 1234}
+    return {'1234': 1234}
 
 
 if __name__ == '__main__':
